@@ -34,6 +34,7 @@
 		7D5630E8256DA80100FF70B9 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630E7256DA80100FF70B9 /* ImageServiceTests.swift */; };
 		7DA65B79256DAC4000C6A8F7 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA65B78256DAC4000C6A8F7 /* ApiTests.swift */; };
 		7DA65B7D256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA65B7C256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift */; };
+		7DA65B83256DB40800C6A8F7 /* CarSmallImageCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA65B82256DB40800C6A8F7 /* CarSmallImageCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		7D5630E7256DA80100FF70B9 /* ImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
 		7DA65B78256DAC4000C6A8F7 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
 		7DA65B7C256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBigImageViewControllerTests.swift; sourceTree = "<group>"; };
+		7DA65B82256DB40800C6A8F7 /* CarSmallImageCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSmallImageCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,14 +136,15 @@
 		7D3DCF85256D2DDB0076C4D2 /* Gallery.DETests */ = {
 			isa = PBXGroup;
 			children = (
-				7D3DCF86256D2DDB0076C4D2 /* CarTests.swift */,
 				7D5630CF256D9F5A00FF70B9 /* CarGalleryAssemblyTests.swift */,
 				7D5630D7256D9FE900FF70B9 /* CarGalleryViewControllerTests.swift */,
 				7D5630DB256DA04900FF70B9 /* CarGalleryViewModelTests.swift */,
-				7D5630DF256DA55000FF70B9 /* CarServiceTests.swift */,
+				7DA65B82256DB40800C6A8F7 /* CarSmallImageCellTests.swift */,
 				7DA65B7C256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift */,
 				7D5630D3256D9FAE00FF70B9 /* CarBigImageAssemblyTests.swift */,
+				7D3DCF86256D2DDB0076C4D2 /* CarTests.swift */,
 				7DA65B78256DAC4000C6A8F7 /* ApiTests.swift */,
+				7D5630DF256DA55000FF70B9 /* CarServiceTests.swift */,
 				7D5630E7256DA80100FF70B9 /* ImageServiceTests.swift */,
 				7D5630E3256DA5A500FF70B9 /* MockURLProtocol.swift */,
 				7D3DCF88256D2DDB0076C4D2 /* Info.plist */,
@@ -323,6 +326,7 @@
 				7D5630E4256DA5A500FF70B9 /* MockURLProtocol.swift in Sources */,
 				7DA65B79256DAC4000C6A8F7 /* ApiTests.swift in Sources */,
 				7D5630E8256DA80100FF70B9 /* ImageServiceTests.swift in Sources */,
+				7DA65B83256DB40800C6A8F7 /* CarSmallImageCellTests.swift in Sources */,
 				7D5630DC256DA04900FF70B9 /* CarGalleryViewModelTests.swift in Sources */,
 				7D3DCF87256D2DDB0076C4D2 /* CarTests.swift in Sources */,
 				7D5630E0256DA55000FF70B9 /* CarServiceTests.swift in Sources */,
