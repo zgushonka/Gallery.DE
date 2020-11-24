@@ -13,8 +13,7 @@
 		7D3DCF77256D2DDA0076C4D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3DCF75256D2DDA0076C4D2 /* Main.storyboard */; };
 		7D3DCF79256D2DDA0076C4D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3DCF78256D2DDA0076C4D2 /* Assets.xcassets */; };
 		7D3DCF7C256D2DDA0076C4D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3DCF7A256D2DDA0076C4D2 /* LaunchScreen.storyboard */; };
-		7D3DCF87256D2DDB0076C4D2 /* Gallery_DETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCF86256D2DDB0076C4D2 /* Gallery_DETests.swift */; };
-		7D3DCF92256D2DDB0076C4D2 /* Gallery_DEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCF91256D2DDB0076C4D2 /* Gallery_DEUITests.swift */; };
+		7D3DCF87256D2DDB0076C4D2 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCF86256D2DDB0076C4D2 /* CarTests.swift */; };
 		7D3DCFA3256D34ED0076C4D2 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCFA2256D34ED0076C4D2 /* Storyboard.swift */; };
 		7D3DCFA9256D36310076C4D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCFA8256D36310076C4D2 /* API.swift */; };
 		7D3DCFB4256D365A0076C4D2 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCFB3256D365A0076C4D2 /* ImageService.swift */; };
@@ -26,17 +25,19 @@
 		7D3DCFFC256D79A30076C4D2 /* CarSmallImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DCFFB256D79A30076C4D2 /* CarSmallImageCell.swift */; };
 		7D3DD004256D8DDF0076C4D2 /* CarBigImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DD003256D8DDF0076C4D2 /* CarBigImageViewController.swift */; };
 		7D3DD016256D8F1D0076C4D2 /* CarBigImageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DD015256D8F1D0076C4D2 /* CarBigImageAssembly.swift */; };
+		7D5630D0256D9F5A00FF70B9 /* CarGalleryAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630CF256D9F5A00FF70B9 /* CarGalleryAssemblyTests.swift */; };
+		7D5630D4256D9FAE00FF70B9 /* CarBigImageAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630D3256D9FAE00FF70B9 /* CarBigImageAssemblyTests.swift */; };
+		7D5630D8256D9FE900FF70B9 /* CarGalleryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630D7256D9FE900FF70B9 /* CarGalleryViewControllerTests.swift */; };
+		7D5630DC256DA04900FF70B9 /* CarGalleryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630DB256DA04900FF70B9 /* CarGalleryViewModelTests.swift */; };
+		7D5630E0256DA55000FF70B9 /* CarServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630DF256DA55000FF70B9 /* CarServiceTests.swift */; };
+		7D5630E4256DA5A500FF70B9 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630E3256DA5A500FF70B9 /* MockURLProtocol.swift */; };
+		7D5630E8256DA80100FF70B9 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5630E7256DA80100FF70B9 /* ImageServiceTests.swift */; };
+		7DA65B79256DAC4000C6A8F7 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA65B78256DAC4000C6A8F7 /* ApiTests.swift */; };
+		7DA65B7D256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA65B7C256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7D3DCF83256D2DDB0076C4D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D3DCF64256D2DD90076C4D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D3DCF6B256D2DD90076C4D2;
-			remoteInfo = Gallery.DE;
-		};
-		7D3DCF8E256D2DDB0076C4D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7D3DCF64256D2DD90076C4D2 /* Project object */;
 			proxyType = 1;
@@ -55,11 +56,8 @@
 		7D3DCF7B256D2DDA0076C4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3DCF7D256D2DDA0076C4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D3DCF82256D2DDB0076C4D2 /* Gallery.DETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gallery.DETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D3DCF86256D2DDB0076C4D2 /* Gallery_DETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery_DETests.swift; sourceTree = "<group>"; };
+		7D3DCF86256D2DDB0076C4D2 /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
 		7D3DCF88256D2DDB0076C4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D3DCF8D256D2DDB0076C4D2 /* Gallery.DEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gallery.DEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D3DCF91256D2DDB0076C4D2 /* Gallery_DEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery_DEUITests.swift; sourceTree = "<group>"; };
-		7D3DCF93256D2DDB0076C4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D3DCFA2256D34ED0076C4D2 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		7D3DCFA8256D36310076C4D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7D3DCFB3256D365A0076C4D2 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
@@ -71,6 +69,15 @@
 		7D3DCFFB256D79A30076C4D2 /* CarSmallImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSmallImageCell.swift; sourceTree = "<group>"; };
 		7D3DD003256D8DDF0076C4D2 /* CarBigImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBigImageViewController.swift; sourceTree = "<group>"; };
 		7D3DD015256D8F1D0076C4D2 /* CarBigImageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBigImageAssembly.swift; sourceTree = "<group>"; };
+		7D5630CF256D9F5A00FF70B9 /* CarGalleryAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGalleryAssemblyTests.swift; sourceTree = "<group>"; };
+		7D5630D3256D9FAE00FF70B9 /* CarBigImageAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBigImageAssemblyTests.swift; sourceTree = "<group>"; };
+		7D5630D7256D9FE900FF70B9 /* CarGalleryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGalleryViewControllerTests.swift; sourceTree = "<group>"; };
+		7D5630DB256DA04900FF70B9 /* CarGalleryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGalleryViewModelTests.swift; sourceTree = "<group>"; };
+		7D5630DF256DA55000FF70B9 /* CarServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceTests.swift; sourceTree = "<group>"; };
+		7D5630E3256DA5A500FF70B9 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		7D5630E7256DA80100FF70B9 /* ImageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
+		7DA65B78256DAC4000C6A8F7 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		7DA65B7C256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBigImageViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +95,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D3DCF8A256D2DDB0076C4D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,7 +103,6 @@
 			children = (
 				7D3DCF6E256D2DD90076C4D2 /* Gallery.DE */,
 				7D3DCF85256D2DDB0076C4D2 /* Gallery.DETests */,
-				7D3DCF90256D2DDB0076C4D2 /* Gallery.DEUITests */,
 				7D3DCF6D256D2DD90076C4D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,7 +112,6 @@
 			children = (
 				7D3DCF6C256D2DD90076C4D2 /* Gallery.DE.app */,
 				7D3DCF82256D2DDB0076C4D2 /* Gallery.DETests.xctest */,
-				7D3DCF8D256D2DDB0076C4D2 /* Gallery.DEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,19 +134,19 @@
 		7D3DCF85256D2DDB0076C4D2 /* Gallery.DETests */ = {
 			isa = PBXGroup;
 			children = (
-				7D3DCF86256D2DDB0076C4D2 /* Gallery_DETests.swift */,
+				7D3DCF86256D2DDB0076C4D2 /* CarTests.swift */,
+				7D5630CF256D9F5A00FF70B9 /* CarGalleryAssemblyTests.swift */,
+				7D5630D7256D9FE900FF70B9 /* CarGalleryViewControllerTests.swift */,
+				7D5630DB256DA04900FF70B9 /* CarGalleryViewModelTests.swift */,
+				7D5630DF256DA55000FF70B9 /* CarServiceTests.swift */,
+				7DA65B7C256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift */,
+				7D5630D3256D9FAE00FF70B9 /* CarBigImageAssemblyTests.swift */,
+				7DA65B78256DAC4000C6A8F7 /* ApiTests.swift */,
+				7D5630E7256DA80100FF70B9 /* ImageServiceTests.swift */,
+				7D5630E3256DA5A500FF70B9 /* MockURLProtocol.swift */,
 				7D3DCF88256D2DDB0076C4D2 /* Info.plist */,
 			);
 			path = Gallery.DETests;
-			sourceTree = "<group>";
-		};
-		7D3DCF90256D2DDB0076C4D2 /* Gallery.DEUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7D3DCF91256D2DDB0076C4D2 /* Gallery_DEUITests.swift */,
-				7D3DCF93256D2DDB0076C4D2 /* Info.plist */,
-			);
-			path = Gallery.DEUITests;
 			sourceTree = "<group>";
 		};
 		7D3DCFA7256D350B0076C4D2 /* UI */ = {
@@ -239,24 +237,6 @@
 			productReference = 7D3DCF82256D2DDB0076C4D2 /* Gallery.DETests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7D3DCF8C256D2DDB0076C4D2 /* Gallery.DEUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D3DCF9C256D2DDB0076C4D2 /* Build configuration list for PBXNativeTarget "Gallery.DEUITests" */;
-			buildPhases = (
-				7D3DCF89256D2DDB0076C4D2 /* Sources */,
-				7D3DCF8A256D2DDB0076C4D2 /* Frameworks */,
-				7D3DCF8B256D2DDB0076C4D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D3DCF8F256D2DDB0076C4D2 /* PBXTargetDependency */,
-			);
-			name = Gallery.DEUITests;
-			productName = Gallery.DEUITests;
-			productReference = 7D3DCF8D256D2DDB0076C4D2 /* Gallery.DEUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -270,10 +250,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					7D3DCF81256D2DDB0076C4D2 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 7D3DCF6B256D2DD90076C4D2;
-					};
-					7D3DCF8C256D2DDB0076C4D2 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 7D3DCF6B256D2DD90076C4D2;
 					};
@@ -294,7 +270,6 @@
 			targets = (
 				7D3DCF6B256D2DD90076C4D2 /* Gallery.DE */,
 				7D3DCF81256D2DDB0076C4D2 /* Gallery.DETests */,
-				7D3DCF8C256D2DDB0076C4D2 /* Gallery.DEUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,13 +286,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7D3DCF80256D2DDB0076C4D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D3DCF8B256D2DDB0076C4D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,15 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D3DCF87256D2DDB0076C4D2 /* Gallery_DETests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D3DCF89256D2DDB0076C4D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D3DCF92256D2DDB0076C4D2 /* Gallery_DEUITests.swift in Sources */,
+				7D5630E4256DA5A500FF70B9 /* MockURLProtocol.swift in Sources */,
+				7DA65B79256DAC4000C6A8F7 /* ApiTests.swift in Sources */,
+				7D5630E8256DA80100FF70B9 /* ImageServiceTests.swift in Sources */,
+				7D5630DC256DA04900FF70B9 /* CarGalleryViewModelTests.swift in Sources */,
+				7D3DCF87256D2DDB0076C4D2 /* CarTests.swift in Sources */,
+				7D5630E0256DA55000FF70B9 /* CarServiceTests.swift in Sources */,
+				7D5630D4256D9FAE00FF70B9 /* CarBigImageAssemblyTests.swift in Sources */,
+				7D5630D8256D9FE900FF70B9 /* CarGalleryViewControllerTests.swift in Sources */,
+				7DA65B7D256DAD0E00C6A8F7 /* CarBigImageViewControllerTests.swift in Sources */,
+				7D5630D0256D9F5A00FF70B9 /* CarGalleryAssemblyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,11 +340,6 @@
 			isa = PBXTargetDependency;
 			target = 7D3DCF6B256D2DD90076C4D2 /* Gallery.DE */;
 			targetProxy = 7D3DCF83256D2DDB0076C4D2 /* PBXContainerItemProxy */;
-		};
-		7D3DCF8F256D2DDB0076C4D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D3DCF6B256D2DD90076C4D2 /* Gallery.DE */;
-			targetProxy = 7D3DCF8E256D2DDB0076C4D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -599,46 +563,6 @@
 			};
 			name = Release;
 		};
-		7D3DCF9D256D2DDB0076C4D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2NDRD39ZCD;
-				INFOPLIST_FILE = Gallery.DEUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "farelapp.Gallery-DEUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Gallery.DE;
-			};
-			name = Debug;
-		};
-		7D3DCF9E256D2DDB0076C4D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2NDRD39ZCD;
-				INFOPLIST_FILE = Gallery.DEUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "farelapp.Gallery-DEUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Gallery.DE;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -665,15 +589,6 @@
 			buildConfigurations = (
 				7D3DCF9A256D2DDB0076C4D2 /* Debug */,
 				7D3DCF9B256D2DDB0076C4D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D3DCF9C256D2DDB0076C4D2 /* Build configuration list for PBXNativeTarget "Gallery.DEUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D3DCF9D256D2DDB0076C4D2 /* Debug */,
-				7D3DCF9E256D2DDB0076C4D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

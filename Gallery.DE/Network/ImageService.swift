@@ -7,7 +7,7 @@ enum ImageSize: String {
 }
 
 protocol ImageService {
-    func image(for uri: String, size: ImageSize, completion: @escaping (UIImage?) -> Void)
+    func image(for uri: URI, size: ImageSize, completion: @escaping (UIImage?) -> Void)
 }
 
 final class ImageServiceImpl: ImageService {
@@ -19,7 +19,7 @@ final class ImageServiceImpl: ImageService {
 
     /// Fetches images without error handling.
     func image(
-        for uri: String,
+        for uri: URI,
         size: ImageSize,
         completion: @escaping (UIImage?) -> Void
     ) {

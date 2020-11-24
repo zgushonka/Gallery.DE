@@ -1,7 +1,7 @@
 import Foundation
 
 protocol CarService {
-    func getCarInfo(for id: CarId, completion: @escaping (Result<Car, Error>) -> Void)
+    func getCarInfo(for carId: CarId, completion: @escaping (Result<Car, Error>) -> Void)
 }
 
 final class CarServiceImpl: CarService {
@@ -13,10 +13,10 @@ final class CarServiceImpl: CarService {
     }
 
     func getCarInfo(
-        for id: CarId,
+        for carId: CarId,
         completion: @escaping (Result<Car, Error>) -> Void
     ) {
-        guard let url = API.Search.car(id).makeURL() else {
+        guard let url = API.Search.car(carId).makeURL() else {
             completion(.failure(NetworkError.wrongRequest))
             return
         }
