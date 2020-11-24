@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bjq-7O-Q9I" userLabel="LogoView">
+                                <rect key="frame" x="0.0" y="284" width="414" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsr-1S-M3c" userLabel="OrangeView">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="128"/>
+                                        <color key="backgroundColor" red="0.92880779499999999" green="0.43769031759999999" blue="0.17631348969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="VX3-mw-stj">
+                                        <rect key="frame" x="87.5" y="22.5" width="273" height="75"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="gallery">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="64" name="STSongti-SC-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=".">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99593955280000002" green="0.42690235380000002" blue="0.091698043049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="64" name="STSongti-SC-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="de">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="64" name="STSongti-SC-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV3-cy-X8R" userLabel="LineView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="4"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="1yT-Hc-E2O"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PY6-1l-2Pi" userLabel="LineView">
+                                        <rect key="frame" x="0.0" y="124" width="414" height="4"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="lJJ-zM-Hq9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dsr-1S-M3c" secondAttribute="bottom" id="82p-Xv-eAD"/>
+                                    <constraint firstItem="PY6-1l-2Pi" firstAttribute="leading" secondItem="Bjq-7O-Q9I" secondAttribute="leading" id="Y1v-4M-8Of"/>
+                                    <constraint firstAttribute="trailing" secondItem="PY6-1l-2Pi" secondAttribute="trailing" id="YMA-c6-BHK"/>
+                                    <constraint firstItem="ZV3-cy-X8R" firstAttribute="top" secondItem="Bjq-7O-Q9I" secondAttribute="top" id="amM-8X-fyg"/>
+                                    <constraint firstItem="ZV3-cy-X8R" firstAttribute="leading" secondItem="Bjq-7O-Q9I" secondAttribute="leading" id="fBB-0V-Plr"/>
+                                    <constraint firstAttribute="height" constant="128" id="fbX-78-70s"/>
+                                    <constraint firstItem="dsr-1S-M3c" firstAttribute="top" secondItem="Bjq-7O-Q9I" secondAttribute="top" id="hiE-j1-510"/>
+                                    <constraint firstItem="VX3-mw-stj" firstAttribute="centerY" secondItem="Bjq-7O-Q9I" secondAttribute="centerY" constant="-4" id="lVg-fT-jNJ"/>
+                                    <constraint firstItem="dsr-1S-M3c" firstAttribute="leading" secondItem="Bjq-7O-Q9I" secondAttribute="leading" id="lvl-p7-5tu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZV3-cy-X8R" secondAttribute="trailing" id="ozA-yh-PHn"/>
+                                    <constraint firstItem="VX3-mw-stj" firstAttribute="centerX" secondItem="Bjq-7O-Q9I" secondAttribute="centerX" constant="17" id="vNw-eA-jwu"/>
+                                    <constraint firstAttribute="bottom" secondItem="PY6-1l-2Pi" secondAttribute="bottom" id="x41-bp-k28"/>
+                                    <constraint firstItem="VX3-mw-stj" firstAttribute="leading" secondItem="dsr-1S-M3c" secondAttribute="trailing" constant="18" id="yEx-H3-eYc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92942053079999998" green="0.92940044399999999" blue="0.92940443750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Bjq-7O-Q9I" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Vp3-Ke-7d4"/>
+                            <constraint firstItem="Bjq-7O-Q9I" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="fCX-ZV-iAx"/>
+                            <constraint firstItem="Bjq-7O-Q9I" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="rtT-ou-8Ow"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+</document>

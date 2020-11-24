@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z4d-5Y-mDV">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Gallery View Controller-->
+        <scene sceneID="UhI-my-ihc">
+            <objects>
+                <collectionViewController storyboardIdentifier="CarGalleryViewController" id="F7j-Cu-Vlg" customClass="CarGalleryViewController" customModule="Gallery_DE" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gtk-nS-TPN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T2B-dW-0bd">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarSmallImageCell" id="qs0-dJ-4C9" customClass="CarSmallImageCell" customModule="Gallery_DE" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3Xx-F8-m1r">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="M4j-De-6ea">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="M4j-De-6ea" secondAttribute="trailing" id="0kt-6d-Jg0"/>
+                                        <constraint firstItem="M4j-De-6ea" firstAttribute="leading" secondItem="3Xx-F8-m1r" secondAttribute="leading" id="3Gn-E4-Bqh"/>
+                                        <constraint firstAttribute="bottom" secondItem="M4j-De-6ea" secondAttribute="bottom" id="QiN-Bk-cKD"/>
+                                        <constraint firstItem="M4j-De-6ea" firstAttribute="top" secondItem="3Xx-F8-m1r" secondAttribute="top" id="vpL-iP-hBI"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="128" height="128"/>
+                                <connections>
+                                    <outlet property="imageView" destination="M4j-De-6ea" id="9ut-5K-mHq"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="F7j-Cu-Vlg" id="tSf-cu-s8G"/>
+                            <outlet property="delegate" destination="F7j-Cu-Vlg" id="c6R-io-zK2"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHd-3b-Nb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="139"/>
+        </scene>
+        <!--Car Big Image View Controller-->
+        <scene sceneID="khv-A5-Pol">
+            <objects>
+                <viewController storyboardIdentifier="CarBigImageViewController" id="aHC-B0-eng" customClass="CarBigImageViewController" customModule="Gallery_DE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTe-Y3-lMm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-WU-nhj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lHw-oM-6id"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lHw-oM-6id" firstAttribute="bottom" secondItem="EMq-WU-nhj" secondAttribute="bottom" id="Car-Jp-JlZ"/>
+                            <constraint firstItem="EMq-WU-nhj" firstAttribute="leading" secondItem="lHw-oM-6id" secondAttribute="leading" id="W7d-S0-tBI"/>
+                            <constraint firstItem="lHw-oM-6id" firstAttribute="trailing" secondItem="EMq-WU-nhj" secondAttribute="trailing" id="lo6-g4-axv"/>
+                            <constraint firstItem="EMq-WU-nhj" firstAttribute="top" secondItem="lHw-oM-6id" secondAttribute="top" id="sdz-if-7jQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="EMq-WU-nhj" id="3a2-pF-xZu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zat-BY-oaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nnb-xX-q1D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z4d-5Y-mDV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="195-ga-TCw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5R-Z2-WKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-129" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="300" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
