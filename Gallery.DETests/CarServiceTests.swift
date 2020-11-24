@@ -72,7 +72,7 @@ extension CarServiceTests {
     }
 }
 
-class CarServiceMock: CarService {
+final class CarServiceMock: CarService {
     var invocationCount: Int = 0
 
     func getCarInfo(

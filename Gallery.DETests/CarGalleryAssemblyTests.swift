@@ -10,5 +10,6 @@ class CarGalleryAssemblyTests: XCTestCase {
 
     func testCreatesVc() throws {
         XCTAssertNotNil(vc)
+        XCTAssertTrue(vc is CarGalleryViewController)
     }
 }

@@ -47,7 +47,6 @@ class CarGalleryViewControllerTests: XCTestCase {
 
     func testImageServiceAsked() {
         XCTAssertNotNil(sut.collectionView(sut.collectionView, cellForItemAt: IndexPath(row: 0, section: 0)))
-
         XCTAssertEqual(imageServiceMock.invocationCount, 1)
         XCTAssertEqual(imageServiceMock.imageUri, "aaa")
         XCTAssertEqual(imageServiceMock.imageSize, .small)

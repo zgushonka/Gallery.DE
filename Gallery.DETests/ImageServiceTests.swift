@@ -68,7 +68,7 @@ extension ImageServiceTests {
     }
 }
 
-class ImageServiceMock: ImageService {
+final class ImageServiceMock: ImageService {
     var invocationCount: Int = 0
     var imageUri: URI?
     var imageSize: ImageSize?

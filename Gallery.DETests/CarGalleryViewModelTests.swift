@@ -50,7 +50,7 @@ class CarGalleryViewModelTests: XCTestCase {
     }
 }
 
-class CarGalleryViewModelMock: CarGalleryViewModel {
+final class CarGalleryViewModelMock: CarGalleryViewModel {
     var detailsAssembly: DetailsAssembly = DetailsAssemblyMock()
 
     var screenTitle: String = "screenTitle"
