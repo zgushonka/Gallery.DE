@@ -55,7 +55,7 @@ final class CarGalleryViewController: UICollectionViewController {
     }
 
     private func setupCarImageCell(_ cell: CarSmallImageCell, index: Int) {
-        guard let imageUri = viewModel?.imageURI(for: index)  else { return }
+        guard let imageUri = viewModel?.imageURI(for: index) else { return }
 
         cell.imageUri = imageUri
 

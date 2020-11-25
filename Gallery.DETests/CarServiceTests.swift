@@ -13,7 +13,6 @@ class CarServiceTests: XCTestCase {
 
         url = URL(string: "https://m.mobile.de/svc/a/777")!
         expectation = expectation(description: "make request")
-        expectation.assertForOverFulfill = false
 
         sut = .init(session: urlSession)
     }

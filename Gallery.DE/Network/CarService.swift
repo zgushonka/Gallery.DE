@@ -35,6 +35,7 @@ final class CarServiceImpl: CarService {
         session.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 completion(.failure(error))
+                return
             }
             guard let data = data,
                   let car = try? decoder.decode(Car.self, from: data) else {

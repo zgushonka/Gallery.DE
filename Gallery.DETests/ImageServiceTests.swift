@@ -13,7 +13,6 @@ class ImageServiceTests: XCTestCase {
 
         url = URL(string: "https://aaa_2.jpg")!
         expectation = expectation(description: "make request")
-        expectation.assertForOverFulfill = false
 
         sut = .init(session: urlSession)
     }

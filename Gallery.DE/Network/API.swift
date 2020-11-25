@@ -27,7 +27,7 @@ enum NetworkError: Error {
 
 private extension ImageSize {
     var uriSuffix: String {
-         switch self {
+        switch self {
         case .small: return "_2"
         case .full: return "_27"
         }
