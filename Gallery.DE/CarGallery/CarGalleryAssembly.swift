@@ -2,6 +2,8 @@ import Foundation
 import UIKit
 
 struct CarGalleryAssembly {
+    static let carId = 310948239
+
     func makeVC() -> UIViewController {
 
         let viewModel = CarGalleryViewModelImpl(
@@ -10,7 +12,7 @@ struct CarGalleryAssembly {
         )
 
         // Let's see some pictures here.
-        viewModel.search(by: 310948239)
+        viewModel.search(by: Self.carId)
 
         let viewController = CarGalleryViewController.make(
             with: viewModel,
